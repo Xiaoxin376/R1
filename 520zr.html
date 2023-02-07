@@ -2,50 +2,9 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <!-- 以下命令手機显示有变化 但不对 -->
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> -->
- <!-- 以下命令手機显示有变化   -->
-<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no">
-<meta name="viewport" content="width=device-width, viewport-fit=cover"  />
-<style>
-body {
- min-width:1280px;
-  /* 适配齐刘海*/
- 
-  padding-top: constant(safe-area-inset-top); 
- 
- /* 适配底部黑条*/
- 
-  padding-bottom: constant(safe-area-inset-bottom);
- 
-}
+ <meta name="viewport" content="user-scalable=yes">
 
-/* 方法1 ：设置内边距 扩展高度*/
-/* 这个方案需要吸底条必须是有背景色的，因为扩展的部分背景是跟随外容器的，否则出现镂空情况。*/
-.fix {
-  padding-bottom: constant(safe-area-inset-bottom);
-}
-/* 直接扩展高度*/
-.fix {
-  height: calc(60px(原来的高度值) + constant(safe-area-inset-bottom));
-}
-
-/* 方法2 ：在元素下面用一个空div填充， 但是背景色要一致 */
-.blank {
-  position: fixed;
-  
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  height: constant(safe-area-inset-bottom);
-  background-color: #fff;
-}
-/* 吸底元素样式 */
-.fix {
-  margin-bottom: constant(safe-area-inset-bottom);
-}
-
-</style>
+ 
     <title>本地 给主人的生日礼物 </title>
     <link type="text/css" rel="stylesheet" href="js/default.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
