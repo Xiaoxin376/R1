@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>喜欢主人给我讲故事</title>
+
+    <style>
+      h1:hover {
+        color: aqua;
+      }
+
+      body {
+        margin-top: 20px;
+        background-repeat: no-repeat;
+
+        height: 100vh;
+        width: auto;
+        background: linear-gradient(50deg, #1197cc, #44caff, #982aff, #ffe45a);
+        overflow: hidden;
+        background-size: 200% 200%;
+        animation: gradient 8s ease infinite;
+        -webkit-animation: gradient 8s ease infinite; /* Safari 和 Chrome */
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @-webkit-keyframes gradient {
+        /* Safari and Chrome */
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+    <link rel="shortcut icon" href="1.ico" />
+  </head>
+  <body>
+    <h1 align="center">主人生日快乐</h1>
+
+    <div style="display: flex; justify-content: center">
+      <video p width="800" height="600" controls autoplay>
+        <source
+          src="https://xiaoxin376.github.io/R1/520/dream.mp4"
+          type="video/mp4"
+        />
+        <source src="movie.ogg" type="video/ogg" />
+        您的浏览器不支持Video标签。
+      </video>
+    </div>
+  </body>
+</html>
